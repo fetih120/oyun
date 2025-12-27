@@ -21,13 +21,20 @@
         </nav>
 
         <main id="game-display">
+            <div id="game-over-screen" style="display:none;">
+                <h2 id="death-text">OYUN BİTTİ!</h2>
+                <p>Skorun: <span id="final-score">0</span></p>
+                <button onclick="selectGame(currentActiveGame)">TEKRAR DENE</button>
+            </div>
+
             <canvas id="gameCanvas" width="400" height="400" style="display:none;"></canvas>
             <div id="ui-game" class="welcome-text">Başlamak için bir oyun seç!</div>
         </main>
     </div>
 
     <script src="yilan.js"></script>
-    <script src="araba.js"></script> 
+    <script src="araba.js"></script>
+    <script src="hafiza.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
