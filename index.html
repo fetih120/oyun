@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyan Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CYAN GAME HUB</h1>
+            <div id="score-board" style="display:none;">Skor: <span id="score">0</span></div>
+        </header>
+
+        <nav class="game-menu">
+            <button onclick="selectGame('snake')">🐍 Yılan</button>
+            <button onclick="selectGame('race')">🏎️ Yarış</button>
+            <button onclick="selectGame('memory')">🧠 Hafıza</button>
+            <button onclick="selectGame('logic')">💡 Zeka</button>
+        </nav>
+
+        <main id="game-display">
+            <canvas id="gameCanvas" width="400" height="400" style="display:none;"></canvas>
+            <div id="ui-game" class="welcome-text">Başlamak için bir oyun seç!</div>
+        </main>
+    </div>
+
+    <script src="yilan.js"></script>
+    <script src="araba.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
